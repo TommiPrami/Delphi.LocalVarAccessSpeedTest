@@ -36,10 +36,17 @@ uses
 
 const
   BUILD_STR =
-  {$IF Defined(DEBUG)}
-    'Debug'
+  {$IF Defined(WIN32)}
+    'Win32'
+  {$ELSEIF Defined(WIN64)}
+    'Win64'
   {$ELSE}
-    'Release'
+    unsupported platform
+  {$ENDIF}
+  {$IF Defined(DEBUG)}
+    + ' Debug'
+  {$ELSE}
+    + ' Release'
   {$ENDIF}
     + ' build';
 
