@@ -1,4 +1,4 @@
-unit LSForm.LocalVarAccessSpeedTest;
+﻿unit LSForm.LocalVarAccessSpeedTest;
 
 interface
 

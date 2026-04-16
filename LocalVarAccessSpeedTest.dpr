@@ -1,4 +1,4 @@
-program LocalVarAccessSpeedTest;
+﻿program LocalVarAccessSpeedTest;
 
 uses
   Vcl.Forms,
